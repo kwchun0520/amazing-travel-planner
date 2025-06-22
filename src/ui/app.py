@@ -1,7 +1,7 @@
 import streamlit as st
 import datetime
 import asyncio
-from src.amazing_travel_planner.app import run_planner
+from src.graphs.runner import run_planner
 
 
 @st.dialog("Travel Plan",width="large")
@@ -38,7 +38,7 @@ def travel_planner_output(interests: str,
         
         
 def main():
-    st.title("Travel Planner Input")
+    st.title("Travel Planner")
 
     # Country Input
     country = st.text_input("Enter your desired country:")

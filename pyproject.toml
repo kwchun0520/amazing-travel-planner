@@ -5,7 +5,15 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "duckduckgo-search>=8.0.4",
+    "langchain-community>=0.3.25",
+    "langchain-google-genai>=2.1.5",
+    "langchain-mcp-adapters>=0.1.7",
     "langchain-ollama>=0.3.3",
     "langgraph>=0.4.8",
+    "mcp[cli]>=1.9.4",
+    "pytest>=8.4.1",
+    "pytest-asyncio>=1.0.0",
+    "streamlit>=1.46.0",
     "typing-extensions>=4.14.0",
 ]
