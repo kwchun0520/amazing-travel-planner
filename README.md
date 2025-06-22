@@ -87,6 +87,7 @@ amazing-travel-planner/
    
 ## Usage
 
+
 The sample input form allows you to enter your travel preferences, such as destination, travel dates, interests, travel style, budget, and trip length. The application will then generate a personalized itinerary based on your inputs.
 ![Amazing Travel Planner Screenshot](assets/planner.png)
 
