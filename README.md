@@ -87,10 +87,13 @@ amazing-travel-planner/
    
 ## Usage
 
-Sample:
-image: 
+The sample input form allows you to enter your travel preferences, such as destination, travel dates, interests, travel style, budget, and trip length. The application will then generate a personalized itinerary based on your inputs.
 ![Amazing Travel Planner Screenshot](assets/planner.png)
+
+The sample output for a trip to Japan is shown below. You can enter your own preferences and get a personalized itinerary.
 ![Plan a trip to Japan](assets/output.png)
+
+You may use download button to save the itinerary as a txt file.
 ![Plan a trip to Japan](assets/output2.png)
 
 
