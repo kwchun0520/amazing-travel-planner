@@ -1,6 +1,6 @@
 # Amazing Travel Planner
 
-Amazing Travel Planner is an AI-powered application powered by **LangGraph**, **FastMCP**. It aims at helps users plan personalized trips based on their interests, travel style, budget, and destination. It leverages advanced language models, real-time web search, and multiple travel-related tools to generate comprehensive travel itineraries.
+Amazing Travel Planner is an AI-powered application powered by **LangGraph**, **FastMCP**. It aims to help users plan personalized trips based on their interests, travel style, budget, and destination. It leverages advanced language models, real-time web search, and multiple travel-related tools to generate comprehensive travel itineraries.
 
 ## Features
 
@@ -18,9 +18,10 @@ Amazing Travel Planner is an AI-powered application powered by **LangGraph**, **
 
 ## Project Structure
 
-```
+```markdown
 amazing-travel-planner/
 ├── tools/                       # FastMCP tools server code
+│   ├── Dockerfile               # Dockerfile for the server
 │   └── server.py                # MCP server with all tool definitions
 │
 ├── src/
@@ -38,7 +39,7 @@ amazing-travel-planner/
 │   │   └── __init__.py
 │   │
 │   ├── clients/                 # MCP clients, LangChain adapters
-│   │   ├── client.py            # MCP connection and tool loading helpers
+│   │   ├── client.py            # MCP connection and tool loading helpers 
 │   │   └── __init__.py
 │   │
 │   ├── ui/                      # Frontend code (Streamlit or other)
@@ -49,6 +50,7 @@ amazing-travel-planner/
 │   │   ├── json_utils.py        # JSON pretty print, serializers, etc.
 │   │   └── __init__.py
 │   │
+│   ├── Dockerfile              # Dockerfile for the app
 │   └── __init__.py
 │
 ├── tests/                       # Unit and integration tests
@@ -59,5 +61,36 @@ amazing-travel-planner/
 ├── requirements.txt             # Python dependencies
 └── README.md
 ```
+
+
+## Getting Started
+### Prerequisites
+- Python 3.13+
+- Docker (for running tools server)
+- Gemini API key (for LLM access)
+
+### Setup Instructions
+1. pip install -r requirements.txt
+2. Set up your Gemini API key `.env` file:
+   ```bash
+   echo GEMINI_API_KEY=__your_api_key_here__ >.env
+   ```
+3. Start the FastMCP server:
+   ```bash
+    ./run-server.sh
+   ```
+4. Run the Streamlit app:
+   ```bash
+   streamlit run src/ui/app.py
+   ```
+5. Open your browser to `http://localhost:8501` to access the app.
+   
+## Usage
+
+Sample:
+image: 
+![Amazing Travel Planner Screenshot](assets/planner.png)
+![Plan a trip to Japan](assets/output.png)
+![Plan a trip to Japan](assets/output2.png)
 
 
